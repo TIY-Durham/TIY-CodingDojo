@@ -3,6 +3,8 @@
 
   function toFraction(number){
     if (number == 0.00){
+      console.log(String(number).split('.')[1]);
+
       return '00/100';
     }
 
