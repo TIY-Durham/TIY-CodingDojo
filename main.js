@@ -1,4 +1,6 @@
 ;(function(globals){ // That IIFE though...
+  globals.toFraction = toFraction;
+
   function toFraction(number){
   }
 })(module && module.exports || window || this);
