@@ -23,4 +23,7 @@ test('toFraction', function(){
    *  1.00 | "00/100"
    * 3.349 | "34/100" or "35/100" ???
    */
+  expect(main.toFraction(0.00)).to.equal('00/100');
+  expect(main.toFraction(0.01)).to.equal('01/100');
+  expect(main.toFraction(0.02)).to.equal('02/100');
 }); // END toFraction
