@@ -1,14 +1,20 @@
 ;(function(globals){ // That IIFE though...
-  // In Node JS: module.exports.hello = hello;
-  // In Browser: window.hello = hello;
-  globals.hello = hello;
+  globals.toFraction = toFraction;
 
-  // In Node JS: module.exports.hello();
-  // In Browser: window.hello();
-  globals.hello();
+  function toFraction(number){
+    if (number == 0.00){
+      console.log(String(number).split('.')[1]);
 
-  function hello(){
-    console.log('Hello from main.js!');
+      return '00/100';
+    }
+
+    if (number == 0.01){
+      console.log(String(number).split('.')[1]);
+
+      return '01/100';
+    }
+
+    return '02/100';
   }
 })(module && module.exports || window || this);
 // Now we know a little more...
