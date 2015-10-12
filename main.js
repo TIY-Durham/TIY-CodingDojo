@@ -7,6 +7,8 @@
     }
 
     if (number == 0.01){
+      console.log(String(number).split('.')[1]);
+
       return '01/100';
     }
 
