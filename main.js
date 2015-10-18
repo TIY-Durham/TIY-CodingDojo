@@ -1,14 +1,17 @@
-;(function(globals){ // That IIFE though...
-  // In Node JS: module.exports.hello = hello;
-  // In Browser: window.hello = hello;
-  globals.hello = hello;
+;(function(){ // That IIFE though...
+  // exports.hello = hello;
 
-  // In Node JS: module.exports.hello();
-  // In Browser: window.hello();
-  globals.hello();
+  // exports.hello();
 
-  function hello(){
-    console.log('Hello from main.js!');
+  // function hello(){
+  //   console.log('Hello from main.js!');
+  // }
+
+  exports.multiplesOf3 = multiplesOf3;
+
+  function multiplesOf3(){
+    return [ ];
   }
-})(module && module.exports || window || this);
+})();
 // Now we know a little more...
+console.log('a string'.split(' '));
